@@ -1,0 +1,140 @@
+@import '@styles/global.scss';
+
+.root {
+  background-color: #000;
+
+  overflow: hidden;
+
+  padding: 36px 16px;
+  color: #fff;
+
+  @include media(tabletVertical) {
+    padding: 100px 160px;
+  }
+}
+
+.title {
+  @include fontJetBrains;
+  font-size: 40px;
+  font-weight: 200;
+
+  text-transform: uppercase;
+  text-align: center;
+
+  color: #fff;
+
+  margin-bottom: 40px;
+
+  @include media(tabletVertical) {
+    font-size: 80px;
+  }
+}
+
+.swiper {
+  overflow: visible;
+
+  cursor: grab;
+
+  &:active {
+    cursor: grabbing;
+  }
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 38px;
+}
+
+.topContentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  position: relative;
+
+  padding: 40px;
+
+  background: linear-gradient(to bottom, #1a1a1a 0%, #1a1a1a38 40%);
+
+  border: 1px solid #262626;
+  border-radius: 20px;
+
+  min-height: 492px;
+}
+
+.upworkIcon {
+  width: 74px;
+  height: 30px;
+}
+
+.arrowDown {
+  position: absolute;
+
+  left: -20px;
+  bottom: -43px;
+
+  width: 114px;
+  height: 69px;
+
+  transform: rotate(180deg);
+
+  color: #262626;
+}
+
+.bottomContentWrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  padding: 8px 0;
+}
+
+.bottomContentTitleAndDateWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.reviewText {
+  @include fontAbel;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.reviewTitle {
+  @include fontAbel;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.date {
+  @include fontAbel;
+  font-size: 14px;
+  font-weight: 300;
+
+  color: #808080;
+}
+
+.logo {
+  min-width: 35px;
+  height: 35px;
+
+  border-radius: 50%;
+
+  background-color: yellowgreen;
+}
+
+.upwork {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 104px;
+  height: 58px;
+
+  border-radius: 8px;
+
+  background-color: #1a1a1a;
+}

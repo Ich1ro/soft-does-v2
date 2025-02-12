@@ -1,0 +1,130 @@
+@import '@styles/global.scss';
+
+.root {
+  background: linear-gradient(
+    -15deg,
+    rgba(226, 255, 102, 0.5) 0%,
+    rgba(226, 255, 102, 0) 20%
+  );
+  background-color: black;
+  color: white;
+  padding: 36px 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+
+  overflow: hidden;
+
+  @include media(laptop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+
+    padding: 100px 160px;
+  }
+}
+
+.leftContentWrapper {
+  @include media(laptop) {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: start;
+  }
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @include media(laptop) {
+    gap: 0;
+  }
+}
+
+.title {
+  @include fontJetBrains;
+  font-weight: 300;
+  font-size: 40px;
+
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+
+  @include media(laptop) {
+    font-size: 80px;
+
+    margin-bottom: 40px;
+  }
+}
+
+.description {
+  @include fontAbel;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.listItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 24px 16px;
+  border-radius: 8px;
+  border: 1px solid black;
+
+  &:nth-child(1) {
+    background-color: white;
+
+    @include media(laptop) {
+      margin-left: 16px;
+    }
+  }
+
+  &:nth-child(2) {
+    background-color: white;
+
+    @include media(laptop) {
+      margin-top: -8px;
+    }
+  }
+
+  &:nth-child(3) {
+    background-color: #cfec57;
+
+    @include media(laptop) {
+      margin-left: 16px;
+      margin-top: -16px;
+    }
+  }
+
+  @include media(laptop) {
+    padding: 32px 48px;
+    width: 100%;
+  }
+}
+
+.listItemNumber {
+  @include fontJetBrains;
+  font-weight: 100;
+  font-size: 40px;
+
+  color: black;
+
+  display: flex;
+}
+
+.listItemDescription {
+  @include fontAbel;
+  font-weight: 400;
+  font-size: 20px;
+
+  color: black;
+
+  text-align: center;
+}
