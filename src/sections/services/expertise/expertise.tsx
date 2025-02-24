@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 
 import { ProgressArrow } from "@shared/assets/icons/services/progress-arrow";
 import { Arrow } from "@shared/assets/icons/services/arrow";
@@ -6,7 +6,7 @@ import { Arrow } from "@shared/assets/icons/services/arrow";
 import s from "./expertise.module.scss";
 
 export const Expertise = () => {
-  const [selected, setSelected] = useState<string | null>(null);
+  // const [selected, setSelected] = useState<string | null>(null);
 
   const expertiseList = [
     { id: "software-dev", title: "Software Development" },
@@ -17,9 +17,9 @@ export const Expertise = () => {
     { id: "ui-ux", title: "UI/UX Design" },
   ];
 
-  const services = {
-    "software-dev": ["Custom Software Development", "Mobile App Development", "Web Application Development", "MVP Development", "Product Development", "API Integration Services"],
-  };
+  // const services = {
+  //   "software-dev": ["Custom Software Development", "Mobile App Development", "Web Application Development", "MVP Development", "Product Development", "API Integration Services"],
+  // };
 
   return (
     <section className={s.root}>
