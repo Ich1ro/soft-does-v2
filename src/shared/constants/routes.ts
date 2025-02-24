@@ -1,4 +1,6 @@
 export const ROUTES = {
-  root: '/',
-  services: '/services',
+    root: "/",
+    subservices: "/subservices",
+
+    services: "/services",
 };
