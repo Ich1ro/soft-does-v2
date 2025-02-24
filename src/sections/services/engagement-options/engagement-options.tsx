@@ -2,8 +2,6 @@ import { Pin } from "@shared/assets/icons/pin-icon";
 
 import s from "./engagement-options.module.scss";
 
-const ICONS = [];
-
 const OPTIONS = [
   {
     title: "> Time and Materials <",
