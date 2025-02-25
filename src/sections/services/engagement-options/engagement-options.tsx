@@ -1,5 +1,8 @@
 import { Pin } from "@shared/assets/icons/pin-icon";
 
+import Time from "@shared/assets/images/services/time.png";
+import Image from "next/image";
+
 import s from "./engagement-options.module.scss";
 
 const OPTIONS = [
@@ -64,7 +67,9 @@ export const Engagement = () => {
       <ul className={s.list}>
         {OPTIONS.map((item, index) => (
           <li className={s.block} key={index}>
-            <div className={s.icon}></div>
+            <div className={s.icon}>
+              <Image src={Time} alt="" width="40" height="40" />
+            </div>
             <h3 className={s.title}>{item.title}</h3>
             <ul>
               <li className={s.point}>
