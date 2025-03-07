@@ -1,6 +1,10 @@
 export const ROUTES = {
-    root: "/",
-    subservices: "/subservices",
+  root: "/",
+  subservices: "/subservices",
 
-    services: "/services",
+  services: "/services",
+
+  expertise: "/expertise",
+
+  softwareDevelopment: "/softwareDevelopment",
 };

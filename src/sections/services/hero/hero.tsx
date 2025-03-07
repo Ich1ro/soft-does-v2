@@ -1,4 +1,4 @@
-import serviceHero from "@assets/images/main/service-hero_shadow.png";
+import hero from "@assets/images/services/service-hero_shadow.png";
 
 import s from "./hero.module.scss";
 import Image from "next/image";
@@ -13,7 +13,7 @@ export const Hero = () => {
         <p className={s.tagText}>We transform market insights into globally beloved apps that power your business</p>
         <button className={s.button}>Contact us</button>
       </div>
-      <Image aria-hidden alt="" src={serviceHero.src} className={s.heroImage} width={serviceHero.width} height={serviceHero.height} />
+      <Image aria-hidden alt="" src={hero.src} className={s.heroImage} width={hero.width} height={hero.height} />
     </section>
   );
 };
