@@ -16,7 +16,6 @@
   }
 
   .block {
-    display: flex;
     padding: 52px 30px;
 
     border: 0.5px solid rgba(255, 255, 255, 0.4);
@@ -92,6 +91,8 @@
           font-size: 20px;
           text-transform: uppercase;
           transition: color 0.5s ease-in-out;
+
+          max-width: 378px;
         }
 
         .img {
