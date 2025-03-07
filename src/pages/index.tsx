@@ -1,12 +1,12 @@
 import { SEO } from "@shared/ui/seo";
 import { ROUTES } from "@shared/constants/routes";
-import { Hero } from "@sections/home/hero/hero";
-import { Certificates } from "@sections/home/certificates/certificates";
-import { AboutUs } from "@sections/home/about-us/about-us";
-import { ServiceSection } from "@sections/home/service-section/service-section";
-import { Industries } from "@sections/home/industries/industries";
-import { Testimonials } from "@sections/home/testimonials/testimonials";
-import { ContactsForm } from "@sections/home/contacts-form/contacts-form";
+import { Hero } from "@sections/Home/hero/hero";
+import { Certificates } from "@sections/Home/certificates/certificates";
+import { AboutUs } from "@sections/Home/about-us/about-us";
+import { ServiceSection } from "@sections/Home/service-section/service-section";
+import { Industries } from "@sections/Home/industries/industries";
+import { Testimonials } from "@sections/Home/testimonials/testimonials";
+import { ContactsForm } from "@sections/Home/contacts-form/contacts-form";
 
 import softwareDevelopment from "@assets/images/main/software-development.png";
 import aiAndMachineLearning from "@assets/images/main/ai-machine-learning.png";
@@ -16,7 +16,7 @@ import uiUxDesign from "@assets/images/main/ui-ux-design.png";
 import architectureAndConsulting from "@assets/images/main/architecture-and-consulting.png";
 
 import data from "@texts/main/index.json";
-import { CaseStudies } from "@sections/home/case-studies/case-studies";
+import { CaseStudies } from "@sections/Home/case-studies/case-studies";
 import Layout from "@shared/components/layout/layout";
 
 export default function Home() {

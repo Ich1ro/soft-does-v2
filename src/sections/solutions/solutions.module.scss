@@ -2,9 +2,11 @@
 
 .root {
   @include fontJetBrains;
-  padding: 180px 160px;
   background-color: black;
   color: #ffffff;
+  padding-left: 160px;
+  padding-right: 160px;
+  padding-bottom: 180px;
 
   h2 {
     font-weight: 300;
