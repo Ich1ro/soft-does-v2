@@ -1,13 +1,13 @@
 import { SEO } from "@shared/ui/seo";
 import { ROUTES } from "@shared/constants/routes";
-import { Contacts } from "@sections/Home/contacts/contacts";
-import { AboutUs } from "@sections/Home/about-us/about-us";
-import { TalkToUs } from "@sections/Home/talk-to-us/talk-to-us";
-import { ServiceSection } from "@sections/Home/service-section/service-section";
-import { Industries } from "@sections/Home/industries/industries";
-import { Testimonials } from "@sections/Home/testimonials/testimonials";
-import { ContactsForm } from "@sections/Home/contacts-form/contacts-form";
-import { FAQ } from "@sections/Home/faq/faq";
+import { Contacts } from "@sections/home/contacts/contacts";
+import { AboutUs } from "@sections/home/about-us/about-us";
+import { TalkToUs } from "@sections/home/talk-to-us/talk-to-us";
+import { ServiceSection } from "@sections/home/service-section/service-section";
+import { Industries } from "@sections/home/industries/industries";
+import { Testimonials } from "@sections/home/testimonials/testimonials";
+import { ContactsForm } from "@sections/home/contacts-form/contacts-form";
+import { FAQ } from "@sections/home/faq/faq";
 
 import softwareDevelopment from "@assets/images/main/software-development.png";
 import aiAndMachineLearning from "@assets/images/main/ai-machine-learning.png";
@@ -17,8 +17,8 @@ import uiUxDesign from "@assets/images/main/ui-ux-design.png";
 import architectureAndConsulting from "@assets/images/main/architecture-and-consulting.png";
 
 import data from "@texts/main/index.json";
-import { CaseStudies } from "@sections/Home/case-studies/case-studies";
-import { Hero } from "@sections/Subservices/hero/hero";
+import { CaseStudies } from "@sections/home/case-studies/case-studies";
+import { Hero } from "@sections/subservices/hero/hero";
 
 export default function Subservices() {
   return (

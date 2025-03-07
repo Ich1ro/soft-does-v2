@@ -1,11 +1,11 @@
 import { SEO } from "@shared/ui/seo";
 import { ROUTES } from "@shared/constants/routes";
 
-import { Hero } from "@sections/IndustriesPage/hero/hero";
+import { Hero } from "@sections/industriesPage/hero/hero";
 import { Solutions } from "@sections/solutions/solutions";
 import { Industries } from "@sections/industries/industries";
 import { Testimonials } from "@sections/testimonials/testimonials";
-import { Benefits } from "@sections/IndustriesPage/benefits/benefits";
+import { Benefits } from "@sections/industriesPage/benefits/benefits";
 import { Portfolio } from "@sections/portfolio/portfolio";
 
 import Layout from "@shared/components/layout/layout";
