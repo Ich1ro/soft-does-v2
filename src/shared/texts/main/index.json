@@ -65,55 +65,27 @@
   "aiMachineLearning": {
     "title": "AI & Machine Learning",
     "buttonText": "Scale ai",
-    "list": [
-      "Artificial Intelligence Development",
-      "Machine Learning Model Development",
-      "AI-Driven Process Automation",
-      "AI Operationalization",
-      "Custom AI Solutions"
-    ]
+    "list": ["Artificial Intelligence Development", "Machine Learning Model Development", "AI-Driven Process Automation", "AI Operationalization", "Custom AI Solutions"]
   },
   "cloudServices": {
     "title": "Cloud Services",
     "buttonText": "Optimize",
-    "list": [
-      "Cloud Computing Solutions",
-      "DevOps and Cloud Infrastructure",
-      "Cloud Migration Services",
-      "Managed Cloud Services"
-    ]
+    "list": ["Cloud Computing Solutions", "DevOps and Cloud Infrastructure", "Cloud Migration Services", "Managed Cloud Services"]
   },
   "dataScienceAndEngeneering": {
     "title": "Data Science & Engineering",
     "buttonText": "Unlock Data",
-    "list": [
-      "Data Science Services",
-      "Data Analytics Solutions",
-      "Enterprise Data Management",
-      "Data Strategy and Governance"
-    ]
+    "list": ["Data Science Services", "Data Analytics Solutions", "Enterprise Data Management", "Data Strategy and Governance"]
   },
   "uiUxDesign": {
     "title": "UI/UX Design",
     "buttonText": "Enhance",
-    "list": [
-      "User Experience Design",
-      "User Interface Design",
-      "Product Design "
-    ]
+    "list": ["User Experience Design", "User Interface Design", "Product Design "]
   },
   "architectureAndConsulting": {
     "title": "Architecture & Consulting Services",
     "buttonText": "Transform",
-    "list": [
-      "Business Analytics",
-      "IT Consulting",
-      "Digital Transformation",
-      "Product Management",
-      "Product Ownership",
-      "Database Design & Development",
-      "Code Audits"
-    ]
+    "list": ["Business Analytics", "IT Consulting", "Digital Transformation", "Product Management", "Product Ownership", "Database Design & Development", "Code Audits"]
   },
   "cases": {
     "title": "Numbers Don’t Lie",
@@ -122,11 +94,7 @@
         "id": "ai",
         "title": "Driving E-commerce Growth for a Boutique Fashion Marketplace",
         "mainInfo": ["2024", "AI & Machine Learning"],
-        "additionalInfo": [
-          "Location: Los Angeles, California",
-          "Industry: E-commerce",
-          "Platform: Web"
-        ],
+        "additionalInfo": ["Location: Los Angeles, California", "Industry: E-commerce", "Platform: Web"],
         "before": {
           "number": "10%",
           "title": "Customer Retention",
@@ -144,11 +112,7 @@
         "id": "cloud-services",
         "title": "Scaling Financial Platforms for a Local Investment Firm",
         "mainInfo": ["2024", "Cloud Services"],
-        "additionalInfo": [
-          "Location: New York",
-          "Industry: Finance",
-          "Platform: Web"
-        ],
+        "additionalInfo": ["Location: New York", "Industry: Finance", "Platform: Web"],
         "before": {
           "number": "25%",
           "title": "Infrastructure Costs",
@@ -166,11 +130,7 @@
         "id": "data-science-engineering",
         "title": "Optimizing Retail Operations for a Regional Grocery Chain",
         "mainInfo": ["2024", "Data Science & Engineering"],
-        "additionalInfo": [
-          "Location: Atlanta, Georgia",
-          "Industry: Retail",
-          "Platform: Web, Mobile"
-        ],
+        "additionalInfo": ["Location: Atlanta, Georgia", "Industry: Retail", "Platform: Web, Mobile"],
         "before": {
           "number": "25%",
           "title": "Data Utilization",
@@ -188,11 +148,7 @@
         "id": "architecture-consulting-services",
         "title": "Streamlining Logistics for a Regional Freight Forwarder",
         "mainInfo": ["2024", "Architecture & Consulting Services"],
-        "additionalInfo": [
-          "Location: Houston, Texas",
-          "Industry: Logistics",
-          "Platform: Web"
-        ],
+        "additionalInfo": ["Location: Houston, Texas", "Industry: Logistics", "Platform: Web"],
         "before": {
           "number": "85%",
           "title": "Delivery Accuracy",
@@ -210,11 +166,7 @@
         "id": "ui-ux-design",
         "title": "Redesigning FinTech Apps for a Startup Bank",
         "mainInfo": ["2024", "UI/UX Design"],
-        "additionalInfo": [
-          "Location: San Francisco, California",
-          "Industry: FinTech",
-          "Platform: Mobile"
-        ],
+        "additionalInfo": ["Location: San Francisco, California", "Industry: FinTech", "Platform: Mobile"],
         "before": {
           "number": "45%",
           "title": "User Drop-off Rate",
@@ -231,7 +183,7 @@
     ]
   },
   "industries": {
-    "title": "Industries",
+    "title": "We have experience in these industries",
     "list": [
       {
         "title": "Finance",
