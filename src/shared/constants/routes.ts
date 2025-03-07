@@ -1,10 +1,11 @@
 export const ROUTES = {
   root: "/",
   subservices: "/subservices",
+  softwareDevelopment: "/softwareDevelopment",
 
   services: "/services",
 
   expertise: "/expertise",
 
-  softwareDevelopment: "/softwareDevelopment",
+  industries: "/industries",
 };

@@ -2,7 +2,7 @@ import { SEO } from "@shared/ui/seo";
 import { ROUTES } from "@shared/constants/routes";
 
 import { Hero } from "@sections/expertise/hero/hero";
-import { Solutions } from "@sections/expertise/solutions/solutions";
+import { Solutions } from "@sections/solutions/solutions";
 import { Industries } from "@sections/industries/industries";
 
 import Layout from "@shared/components/layout/layout";

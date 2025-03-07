@@ -21,27 +21,27 @@ import { CaseStudies } from "@sections/home/case-studies/case-studies";
 import { Hero } from "@sections/subservices/hero/hero";
 
 export default function Subservices() {
-    return (
-        <>
-            <SEO title="SOFT DOES" description="SOFT DOES is company, that will help your bussines grow!" pathname={ROUTES.subservices} />
-            <main>
-                <Hero />
-                <ServiceSection currentColor="#173B91" img={softwareDevelopment} {...data.softwareDevelopment} />
-                <ServiceSection currentColor="#D75186" img={aiAndMachineLearning} isRight {...data.aiMachineLearning} />
-                <ServiceSection currentColor="#F28B82" img={cloudServices} {...data.cloudServices} />
-                <ServiceSection currentColor="#BF81FF" img={dataScienceAndEngeneering} isRight {...data.dataScienceAndEngeneering} />
-                <ServiceSection currentColor="#2741FF" img={uiUxDesign} {...data.uiUxDesign} />
-                <ServiceSection currentColor="#515151" img={architectureAndConsulting} isRight {...data.architectureAndConsulting} />
-                <Testimonials />
-                <AboutUs />
-                <ContactsForm />
-                <Industries />
-                <CaseStudies />
-                <TalkToUs />
-                <FAQ />
-                <Contacts />
-                <ContactsForm />
-            </main>
-        </>
-    );
+  return (
+    <>
+      <SEO title="SOFT DOES" description="SOFT DOES is company, that will help your bussines grow!" pathname={ROUTES.subservices} />
+      <main>
+        <Hero />
+        <ServiceSection currentColor="#173B91" img={softwareDevelopment} {...data.softwareDevelopment} />
+        <ServiceSection currentColor="#D75186" img={aiAndMachineLearning} isRight {...data.aiMachineLearning} />
+        <ServiceSection currentColor="#F28B82" img={cloudServices} {...data.cloudServices} />
+        <ServiceSection currentColor="#BF81FF" img={dataScienceAndEngeneering} isRight {...data.dataScienceAndEngeneering} />
+        <ServiceSection currentColor="#2741FF" img={uiUxDesign} {...data.uiUxDesign} />
+        <ServiceSection currentColor="#515151" img={architectureAndConsulting} isRight {...data.architectureAndConsulting} />
+        <Testimonials />
+        <AboutUs />
+        <ContactsForm />
+        <Industries />
+        <CaseStudies />
+        <TalkToUs />
+        <FAQ />
+        <Contacts />
+        <ContactsForm />
+      </main>
+    </>
+  );
 }

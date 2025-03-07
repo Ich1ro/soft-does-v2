@@ -1,18 +1,17 @@
-'use client'
-import styles from './Footer.module.scss';
+"use client";
+import styles from "./Footer.module.scss";
 
 export default function Footer() {
-
   const scrollToContacts = () => {
-    const element = document.getElementById('contacts');
-    
+    const element = document.getElementById("contacts");
+
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   return (
-    <div className={styles.footer} id="insights">
+    <footer className={styles.footer} id="insights">
       <div className={styles.footer_line}>
         <div className={styles.footer_line_column}>
           <h4>Services</h4>
@@ -87,10 +86,7 @@ export default function Footer() {
           <h2>Soft Does</h2>
           <div className={styles.footer_line_column_images}></div>
           <button onClick={scrollToContacts}>Contact us</button>
-          <p>
-            ©Copyright 2024 Yalantis - Software engineering and IT consulting
-            company. All rights reserved
-          </p>
+          <p>©Copyright 2024 Yalantis - Software engineering and IT consulting company. All rights reserved</p>
         </div>
         <div className={styles.footer_line_column}>
           <a>Cookies notice</a>
@@ -99,6 +95,6 @@ export default function Footer() {
           <a>Yalantis Sustainability Policy</a>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }

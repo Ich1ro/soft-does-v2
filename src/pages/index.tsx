@@ -1,3 +1,5 @@
+import data from "@texts/main/index.json";
+
 import { SEO } from "@shared/ui/seo";
 import { ROUTES } from "@shared/constants/routes";
 import { Hero } from "@sections/home/hero/hero";
@@ -15,7 +17,6 @@ import dataScienceAndEngeneering from "@assets/images/main/data-science.png";
 import uiUxDesign from "@assets/images/main/ui-ux-design.png";
 import architectureAndConsulting from "@assets/images/main/architecture-and-consulting.png";
 
-import data from "@texts/main/index.json";
 import { CaseStudies } from "@sections/home/case-studies/case-studies";
 import Layout from "@shared/components/layout/layout";
 
