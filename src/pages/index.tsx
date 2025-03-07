@@ -2,7 +2,7 @@ import data from "@texts/main/index.json";
 
 import { SEO } from "@shared/ui/seo";
 import { ROUTES } from "@shared/constants/routes";
-import { Hero } from "@sections/Home/hero/hero";
+// import { Hero } from "@sections/Home/hero/hero";
 import { Certificates } from "@sections/Home/certificates/certificates";
 import { AboutUs } from "@sections/Home/about-us/about-us";
 import { ServiceSection } from "@sections/Home/service-section/service-section";
@@ -25,7 +25,7 @@ export default function Home() {
     <>
       <SEO title="SOFT DOES" description="SOFT DOES is company, that will help your bussines grow!" pathname={ROUTES.root} />
       <Layout>
-        <Hero />
+        {/* <Hero /> */}
         <Certificates />
         <ServiceSection currentColor="#173B91" img={softwareDevelopment} {...data.softwareDevelopment} />
         <ServiceSection currentColor="#D75186" img={aiAndMachineLearning} isRight {...data.aiMachineLearning} />
