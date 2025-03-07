@@ -102,6 +102,8 @@
     left: 50%;
     transform: translate(-50%, -55%);
   }
+
+  pointer-events: none;
 }
 
 .text {
