@@ -9,6 +9,7 @@ import { ServiceSection } from "@sections/home/service-section/service-section";
 import { Industries } from "@sections/home/industries/industries";
 import { Testimonials } from "@sections/home/testimonials/testimonials";
 import { ContactsForm } from "@sections/home/contacts-form/contacts-form";
+import { CaseStudies } from "@sections/home/case-studies/case-studies";
 
 import softwareDevelopment from "@assets/images/main/software-development.png";
 import aiAndMachineLearning from "@assets/images/main/ai-machine-learning.png";
@@ -17,7 +18,6 @@ import dataScienceAndEngeneering from "@assets/images/main/data-science.png";
 import uiUxDesign from "@assets/images/main/ui-ux-design.png";
 import architectureAndConsulting from "@assets/images/main/architecture-and-consulting.png";
 
-import { CaseStudies } from "@sections/home/case-studies/case-studies";
 import Layout from "@shared/components/layout/layout";
 
 export default function Home() {
