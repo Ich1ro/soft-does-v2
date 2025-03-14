@@ -1,14 +1,13 @@
 @import "@styles/global.scss";
 
 .root {
-  background-image: url("../../../shared/assets/images/softwareDev/hero.png");
-  background-position: center;
-  background-size: cover;
+  background-image: url("../../../shared/assets/images/aiml/wave.png"), url("../../../shared//assets//images/aiml/stars.png");
+  background-position: bottom, center;
+  background-size: 100% 50%, 70% 70%;
   background-repeat: no-repeat;
 
-  background-color: black;
-  padding-top: 244px;
-  padding-bottom: 112px;
+  padding-top: 236px;
+  padding-bottom: 236px;
   color: white;
   position: relative;
 }
@@ -25,25 +24,20 @@
   line-height: 100%;
   letter-spacing: -0.08em;
 
-  max-width: 949px;
+  max-width: 800px;
   margin-bottom: 48px;
 }
 
-.text {
-  @include fontDMmono;
+.tagText {
+  @include fontAbel;
+  font-size: 18px;
   font-weight: 400;
-  font-size: 20px;
   line-height: 140%;
-  line-height: 30px;
-  letter-spacing: -0.04em;
-  color: #999999;
+  color: rgba(255, 255, 255, 0.6);
 
-  max-width: 380px;
   margin-bottom: 48px;
 
-  & > *:first-child {
-    margin-bottom: 48px;
-  }
+  max-width: 523px;
 }
 
 .button {
@@ -66,7 +60,10 @@
 
 .heroImage {
   position: absolute;
-  bottom: 67px;
+  bottom: -5%;
   right: 0;
   z-index: 0;
+
+  width: 58%;
+  height: auto;
 }

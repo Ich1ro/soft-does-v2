@@ -1,4 +1,4 @@
-@import '@styles/global.scss';
+@import "@styles/global.scss";
 
 .root {
   display: flex;
@@ -80,7 +80,7 @@
   margin-bottom: 16px;
 
   &::before {
-    content: '>';
+    content: ">";
 
     display: inline;
 
@@ -88,7 +88,7 @@
   }
 
   &::after {
-    content: '<';
+    content: "<";
 
     display: inline;
 
@@ -166,18 +166,13 @@
   @include fontJetBrains;
   font-weight: 300;
   font-size: 18px;
-
   text-transform: uppercase;
+  text-align: center;
 
-  width: 100%;
-
-  padding: 12px 0;
-
+  box-sizing: border-box;
+  padding: 27px;
   border: 2px solid #fff;
   border-radius: 8px;
-
-  background-color: transparent;
-  color: #fff;
 
   cursor: pointer;
 
