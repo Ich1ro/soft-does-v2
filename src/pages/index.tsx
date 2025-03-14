@@ -27,12 +27,12 @@ export default function Home() {
       <Layout>
         <Hero />
         <Certificates />
-        <ServiceSection currentColor="#173B91" img={softwareDevelopment} {...data.softwareDevelopment} />
-        <ServiceSection currentColor="#D75186" img={aiAndMachineLearning} isRight {...data.aiMachineLearning} />
-        <ServiceSection currentColor="#F28B82" img={cloudServices} {...data.cloudServices} />
-        <ServiceSection currentColor="#BF81FF" img={dataScienceAndEngeneering} isRight {...data.dataScienceAndEngeneering} />
-        <ServiceSection currentColor="#2741FF" img={uiUxDesign} {...data.uiUxDesign} />
-        <ServiceSection currentColor="#515151" img={architectureAndConsulting} isRight {...data.architectureAndConsulting} />
+        <ServiceSection link="/softwaredev" currentColor="#173B91" img={softwareDevelopment} {...data.softwareDevelopment} />
+        <ServiceSection link="/ai-and-ml" currentColor="#D75186" img={aiAndMachineLearning} isRight {...data.aiMachineLearning} />
+        <ServiceSection link="/" currentColor="#F28B82" img={cloudServices} {...data.cloudServices} />
+        <ServiceSection link="/" currentColor="#BF81FF" img={dataScienceAndEngeneering} isRight {...data.dataScienceAndEngeneering} />
+        <ServiceSection link="/" currentColor="#2741FF" img={uiUxDesign} {...data.uiUxDesign} />
+        <ServiceSection link="/" currentColor="#515151" img={architectureAndConsulting} isRight {...data.architectureAndConsulting} />
         <Testimonials />
         <AboutUs />
         <ContactsForm />
