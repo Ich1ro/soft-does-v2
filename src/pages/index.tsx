@@ -9,7 +9,7 @@ import { ServiceSection } from "@sections/home/service-section/service-section";
 import { Industries } from "@sections/home/industries/industries";
 import { Testimonials } from "@sections/home/testimonials/testimonials";
 import { ContactsForm } from "@sections/home/contacts-form/contacts-form";
-import { CaseStudies } from "@sections/home/case-studies/case-studies";
+import { CaseStudies } from "@sections/case-studies/case-studies";
 
 import softwareDevelopment from "@assets/images/main/software-development.png";
 import aiAndMachineLearning from "@assets/images/main/ai-machine-learning.png";
