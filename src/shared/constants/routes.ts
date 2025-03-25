@@ -1,11 +1,14 @@
 export const ROUTES = {
   root: "/",
-  subservices: "/subservices",
-  softwareDevelopment: "/softwareDevelopment",
+  softwaredev: "/softwaredev",
+  aiml: "/ai-and-ml",
+  cloudServices: "/cloud-services",
 
   services: "/services",
 
   expertise: "/expertise",
 
   industries: "/industries",
+
+  insights: "/insights",
 };

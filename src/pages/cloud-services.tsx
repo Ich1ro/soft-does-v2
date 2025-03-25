@@ -12,10 +12,10 @@ import { Industries } from "@sections/industries/industries";
 
 import Layout from "@shared/components/layout/layout";
 
-export default function SoftwareDev() {
+export default function CloudServices() {
   return (
     <>
-      <SEO title="SOFT DOES" description="SOFT DOES is company, that will help your bussines grow!" pathname={ROUTES.softwareDevelopment} />
+      <SEO title="SOFT DOES" description="SOFT DOES is company, that will help your bussines grow!" pathname={ROUTES.cloudServices} />
       <Layout>
         <Hero />
         <Results />
