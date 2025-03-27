@@ -4,7 +4,8 @@ import Image from "next/image";
 
 import { Kansas } from "@shared/components/kansas/kansas";
 
-import hero from "@assets/images/industries/hero.png";
+import hero from "@assets/images/portfolio/hero.png";
+
 import s from "./hero.module.scss";
 
 export const Hero = () => {
@@ -43,9 +44,9 @@ export const Hero = () => {
       <div className={s.container}>
         <Kansas />
         <h1 className={s.title}>
-          <span>Soft does</span> Industries
+          <span>Soft does</span> Portfolio
         </h1>
-        <p className={s.text}>{data.hero.tagText}</p>
+        <p className={s.text}>We transform market insights into globally beloved apps that power your business</p>
         <button className={s.button}>{data.hero.btnText}</button>
       </div>
       <Image

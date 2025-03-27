@@ -41,12 +41,11 @@
 
       cursor: pointer;
     }
-  }
-}
 
-.active {
-  border: 1px solid #cfec57;
-  border-radius: 4px;
+    .active {
+      border: 1px solid #cfec57;
+    }
+  }
 }
 
 .swiperContainer {
@@ -73,10 +72,6 @@
       color: gray;
     }
   }
-}
-
-.navButton:hover {
-  color: yellow;
 }
 
 .swiper {
