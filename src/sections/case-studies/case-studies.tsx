@@ -38,6 +38,12 @@ export const CaseStudies = () => (
       grabCursor={true}
       effect={"creative"}
       mousewheel={true}
+      // mousewheel={{
+      //   enabled: true,
+      //   forceToAxis: true,
+      //   sensitivity: 1,
+      //   releaseOnEdges: true,
+      // }}
       creativeEffect={{
         prev: {
           shadow: true,
