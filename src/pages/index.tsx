@@ -9,7 +9,8 @@ import { ServiceSection } from "@sections/home/service-section/service-section";
 import { Industries } from "@sections/home/industries/industries";
 import { Testimonials } from "@sections/home/testimonials/testimonials";
 import { ContactsForm } from "@sections/home/contacts-form/contacts-form";
-import { CaseStudies } from "@sections/case-studies/case-studies";
+import { CaseStudies as CaseStudiesVertical } from "@sections/case-studies/case-studiesV";
+import { CaseStudies as CaseStudiesHorizontal } from "@sections/case-studies/case-stuidesH";
 
 import softwareDevelopment from "@assets/images/main/software-development.png";
 import aiAndMachineLearning from "@assets/images/main/ai-machine-learning.png";
@@ -36,8 +37,9 @@ export default function Home() {
         <Testimonials />
         <AboutUs />
         <ContactsForm />
+        <CaseStudiesVertical />
         <Industries />
-        <CaseStudies />
+        <CaseStudiesHorizontal />
       </Layout>
     </>
   );

@@ -21,16 +21,13 @@ export default function Header() {
   return (
     <div className={styles.main} id="header">
       <Link href="/" className={styles.main_header}>
-        {/* <h3 className={styles.main_header_left}>{'>'}</h3>
-        <h3 className={styles.main_header_center}>Soft Does</h3>
-        <h3 className={styles.main_header_right}>{'<'}</h3> */}
         SOFT DOES
       </Link>
       <div className={`${styles.main_nav} ${isMenuOpen ? styles.main_nav_open : ""}`}>
         <Link href="/services">Services</Link>
         <Link href="/expertise">Expertise</Link>
         <Link href="/industries">Industies</Link>
-        <Link href="/">Success Stories</Link>
+        <Link href="/portfolio">Success Stories</Link>
         <Link href="/">Solution Hub</Link>
         <Link href="/">Company</Link>
         <Link href="/insights">Insights</Link>

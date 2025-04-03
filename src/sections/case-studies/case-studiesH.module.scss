@@ -2,6 +2,7 @@
 
 .root {
   background: white;
+  height: 500vh;
   // padding: 32px 16px;
 
   // @include media(laptop) {
@@ -10,15 +11,20 @@
 }
 
 .contentContainer {
+  height: 100vh;
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  overflow: hidden;
 
   & > ul {
-    width: 100vw;
+    height: 100vh;
+    width: 381vw;
     display: flex;
-    flex-direction: column;
-    gap: 160px;
+    gap: 200px;
+    padding: 0 160px;
     position: relative;
   }
 }
@@ -26,9 +32,8 @@
 .title {
   @include fontJetBrains;
   font-weight: 300;
-  font-size: 2.5rem;
+  font-size: 40px;
 
-  text-align: center;
   text-transform: uppercase;
 
   height: 100%;
@@ -44,8 +49,6 @@
 }
 
 .cardContainer {
-  position: sticky;
-  top: 0;
   height: 100vh;
   display: flex;
   justify-content: center;

@@ -194,7 +194,7 @@
 .img {
   width: 250px;
   height: 250px;
-  animation: float 3s ease-in-out infinite;
+  animation: float 4s ease-in-out infinite;
 
   @include media(laptop) {
     width: 450px;
@@ -206,14 +206,8 @@
   0% {
     transform: translateY(0);
   }
-  25% {
-    transform: translateY(-10px);
-  }
   50% {
-    transform: translateY(0);
-  }
-  75% {
-    transform: translateY(10px);
+    transform: translateY(30px);
   }
   100% {
     transform: translateY(0);
