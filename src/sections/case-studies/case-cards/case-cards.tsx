@@ -1,6 +1,6 @@
 import data from "@texts/main/index.json";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCreative, Mousewheel, Pagination } from "swiper/modules";
+import { useRef } from "react";
+import { motion, useScroll } from "framer-motion";
 
 import aiLaptop from "@assets/images/main/ai-laptop.png";
 import aiPhone from "@assets/images/main/ai-phone.png";
@@ -17,8 +17,7 @@ import designLaptop from "@assets/images/main/design-laptop.png";
 import designPhone from "@assets/images/main/design-phone.png";
 import designTwoPhones from "@assets/images/main/design-two-phones.png";
 
-import s from "./case-studies.module.scss";
-import "swiper/css";
+import s from "../case-studiesH.module.scss";
 import clsx from "clsx";
 
 const PHOTOS = {
@@ -31,36 +30,18 @@ const PHOTOS = {
 
 type Key = keyof typeof PHOTOS;
 
-export const CaseStudies = () => (
-  <section className={s.root}>
-    <Swiper
-      direction={"horizontal"}
-      grabCursor={true}
-      effect={"creative"}
-      mousewheel={true}
-      // mousewheel={{
-      //   enabled: true,
-      //   forceToAxis: true,
-      //   sensitivity: 1,
-      //   releaseOnEdges: true,
-      // }}
-      creativeEffect={{
-        prev: {
-          shadow: true,
-          translate: [0, 0, -400],
-        },
-        next: {
-          translate: ["80%", 0, -200],
-        },
-      }}
-      modules={[EffectCreative, Mousewheel, Pagination]}
-    >
-      <SwiperSlide className={s.firstSlide}>
-        <h2 className={s.title}>{data.cases.title}</h2>
-      </SwiperSlide>
-      {data.cases.list.map((item) => (
-        <SwiperSlide key={item.id}>
-          <li className={s.caseCardRoot}>
+export const CaseCards = () => {
+  const targetRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+    offset: ["start center", "start start"],
+  });
+
+  return (
+    <>
+      {data.cases.list.map((item, index) => (
+        <li ref={targetRef} key={index} className={s.cardContainer}>
+          <div className={s.caseCardRoot}>
             <div className={s.tagsContainer}>
               <ul className={s.mainTags}>
                 {item.mainInfo.map((i) => (
@@ -83,24 +64,30 @@ export const CaseStudies = () => (
               <h3 className={s.cardTitle}>{item.title}</h3>
 
               <ul className={s.photosWrapper}>
-                <li
-                  className={s.photo}
-                  style={{
-                    backgroundImage: `url(${PHOTOS[item.id as Key][0].src})`,
-                  }}
-                />
-                <li
-                  className={s.photo}
-                  style={{
-                    backgroundImage: `url(${PHOTOS[item.id as Key][1].src})`,
-                  }}
-                />
-                <li
-                  className={s.photo}
-                  style={{
-                    backgroundImage: `url(${PHOTOS[item.id as Key][2].src})`,
-                  }}
-                />
+                <motion.div style={{ opacity: scrollYProgress }} className={s.inner}>
+                  <li
+                    className={s.photo}
+                    style={{
+                      backgroundImage: `url(${PHOTOS[item.id as Key][0].src})`,
+                    }}
+                  />
+                </motion.div>
+                <motion.div style={{ opacity: scrollYProgress }} className={s.inner}>
+                  <li
+                    className={s.photo}
+                    style={{
+                      backgroundImage: `url(${PHOTOS[item.id as Key][1].src})`,
+                    }}
+                  />
+                </motion.div>
+                <motion.div style={{ opacity: scrollYProgress }} className={s.inner}>
+                  <li
+                    className={s.photo}
+                    style={{
+                      backgroundImage: `url(${PHOTOS[item.id as Key][2].src})`,
+                    }}
+                  />
+                </motion.div>
               </ul>
             </div>
 
@@ -127,9 +114,9 @@ export const CaseStudies = () => (
                 <p className={s.bottomCardText}>{item.after.text}</p>
               </li>
             </ul>
-          </li>
-        </SwiperSlide>
+          </div>
+        </li>
       ))}
-    </Swiper>
-  </section>
-);
+    </>
+  );
+};
