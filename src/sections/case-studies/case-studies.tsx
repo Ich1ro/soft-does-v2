@@ -41,8 +41,7 @@ export const CaseStudies = () => {
         <motion.ul>
           <li className={s.cardContainer}>
             <div>
-              {/* {data.cases.title} */}
-              <h2 className={s.title}>Vertical variant</h2>
+              <h2 className={s.title}>{data.cases.title}</h2>
             </div>
           </li>
           {data.cases.list.map((item, index) => (

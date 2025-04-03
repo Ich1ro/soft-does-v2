@@ -17,7 +17,7 @@ import designLaptop from "@assets/images/main/design-laptop.png";
 import designPhone from "@assets/images/main/design-phone.png";
 import designTwoPhones from "@assets/images/main/design-two-phones.png";
 
-import s from "../case-studiesH.module.scss";
+import s from "../case-studies.module.scss";
 import clsx from "clsx";
 
 const PHOTOS = {
